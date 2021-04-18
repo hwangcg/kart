@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* 공통 */
+section h3 {font-size: 1.9rem; line-height: 1.9rem; font-weight: 500; text-align: center;}
+
+html {overflow-x: hidden;/* 슬라아더 arrow로 인한 x축 스크롤 발생 방지 */}
+
+
+
+
+/* 비주얼영역 */
+section.visual_con {margin-top: 35px;}
+.visual_con .main_title {margin-top: 30px; font-size: 3.5rem; line-height: 3.5rem; letter-spacing: 0em; font-family: "Wemakeprice"; font-weight: 700; text-align: center;}
+.visual_con .more_btn {float: right; margin-top: 10px; padding: 0 18px 0px 10px; font-size: 1.6rem; line-height: 1.6rem; color: #353a40; background: url('../img/icon_bullet0.png') no-repeat right center;}
+.visual_con .main_desc {clear: both; padding-top: 23px; font-size: 1.9rem; line-height: 3.0rem; font-weight: 300; text-align: center; word-break: keep-all;}
+.shortcut_con {margin-top: 0px; text-align: center;}
+.shortcut_con a {display: block;}
+.shortcut_con > div {margin-top: 30px;}
+.shortcut_con .name {display: block; margin-top: 21px; font-size: 1.7rem; line-height: 1.7rem; font-weight: 500;}
+
+
+/* 운영중인 과정 */
+section.course_con {position: relative; margin-top: 58px;}
+.course_con .list_contents_con {position: relative; z-index: 1;}
+.course_con .bg_con {position: absolute; z-index: 0; bottom: 0; width: 100%; height: 336px; background: url('../img/course_bg.jpg') no-repeat center center; background-size: cover;}
+.list_contents_con .list_wrap {margin-top: 35px;}
+.list_contents_con .list_con {padding-bottom: 71px;}
+.list_contents_con .list {float: left;}
+.list_contents_con .list:first-child {margin-left: 0;}
+.course_con .thumbnail_con {position: relative; width: 100%; max-width: 376px; max-height: 120px; margin: 0px auto; overflow: hidden;}
+.course_con .thumbnail_con img {
+    /* width: 376px; height: 120px;  */
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s ease-in-out;
+    -moz-transition:.3s ease-in-out;
+    -ms-transition:.3s ease-in-out;
+    -o-transition:.3s ease-in-out;
+    transition:.3s ease-in-out;
+}
+.list_contents_con .list:hover .thumbnail_con img {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
+.course_con .thumbnail_con .course_type {position: absolute; top: 0; left: 0; display: inline-block; width: 70px; padding: 8px 0 10px; font-size: 1.7rem; line-height: 1.7rem; font-weight: 500; color: #fff; text-align: center;}
+.course_con .thumbnail_con .course_type.online {background-color: #f47b44;}
+.course_con .thumbnail_con .course_type.offline {background-color: #a39e96;}
+.course_con .info_con {max-width: 376px; box-sizing: border-box; margin: 0px auto; padding: 45px 29px; background:linear-gradient(-45deg, transparent 37px, #fff 0);}
+.course_con .info_con .title {font-family: "WemakePrice"; font-size: 2.3rem; line-height: 2.3rem; font-weight: 500; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.course_con .info_con .go {display: inline-block; padding-right: 16px; background: url('../img/icon_bullet1.png') no-repeat right center; font-size: 1.6rem; line-height: 1.6rem; font-weight: 700;}
+.course_con .info_con dl {font-size: 0; margin: 28px 0px 30px;}
+.course_con .info_con dl > * {font-size: 1.6rem; line-height: 1.6rem; font-weight: 400;}
+.course_con .info_con dl dt {float: left; margin-top: 15px; padding-right: 15px; letter-spacing: 0.025em;}
+.course_con .info_con dl dd {overflow: hidden; margin-top: 15px; padding-left: 15px; background: url('../img/pipe0.png') no-repeat left center; font-family: "Roboto"; letter-spacing: 0;}
+.course_con .pagination_con {font-size: 0; position: absolute; bottom: 29px !important;}
+.course_con .pagination_con .swiper-pagination-bullet {display: inline-block; width: 12px; height: 12px; margin: 0px 10px !important; background-color: transparent; border: 1px solid #fff; opacity: 0.5;}
+.course_con .pagination_con .swiper-pagination-bullet.swiper-pagination-bullet-active {background-color: #fff; border-color: rgb(255, 255, 255, 1); opacity: 1;}
+.course_con .slide_arrow {display: none; position: absolute; top: 234px; cursor: pointer;}
+.course_con .slide_arrow:focus {outline: none;}
+.course_con .slide_arrow.left {left: -47px;}
+.course_con .slide_arrow.right {right: -47px;}
+
+
+/* 학습지원 */
+section.support_con {margin-top: 58px;}
+.support_con ul.post_con {width: 100%; overflow: hidden; margin-top: 27px; font-size: 0;}
+.support_con ul.post_con > li {position: relative; float: left; width: 100%; padding: 16px 0px 19px 15px; overflow: hidden; vertical-align: top; background: url('../img/icon_list0.png') no-repeat left center;}
+.support_con ul.post_con > li > a {display: block;}
+.support_con ul.post_con > li:after {content: ''; position: absolute; left: 15px; bottom: 0; width: 100%; height: 1px; background: #eceaf7;}
+.support_con ul.post_con > li.first_post {padding-left: 0; background: none;}
+.support_con ul.post_con > li.first_post:after {display: none;}
+.support_con ul.post_con > li:last-child:after {display: none;}
+.support_con ul.post_con .title {float: left; width: calc(100% - 90px); font-size: 1.7rem; line-height: 1.7rem; font-weight: 400; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.support_con ul.post_con .reg_date {float: right; width: 90px; font-family: "Roboto"; font-size: 1.7rem; line-height: 1.7rem; letter-spacing: 0; text-align: right;}
+.support_con ul.post_con > li.first_post .title {float: none; width: 100%; border: none; font-family: "Wemakeprice"; font-size: 2.1rem; line-height: 2.1rem; font-weight: 500; color: #f47b44;}
+.support_con ul.post_con > li.first_post .title .new {display: inline-block; width: 19px; height: 12px; vertical-align: top; background: url('../img/icon_new.png') no-repeat right top;}
+.support_con ul.post_con > li.first_post .desc {max-height: 96px; margin: 20px 0px 21px; font-size: 1.7rem; line-height: 3.2rem; word-break: keep-all; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+.support_con ul.post_con > li.first_post .reg_date {float: none; text-align: left;}
+
+
+/* 바로가기 */
+section.icon_con {margin: 31px 0 50px;}
+.icon_con .icon_item_con {font-size: 0; text-align: center;}
+.icon_con .icon_item {display: inline-block; padding: 20px 0 0; width: 100%;}
+.icon_con .icon_item > * {vertical-align: middle;}
+.icon_con .icon_item a {display: inline-block; margin-left: 12px; padding-right: 15px; background: url('../img/icon_bullet0.png') no-repeat right 9px; font-size: 1.7rem; line-height: 2.5rem; font-weight: 500;}
+
+
+
+
+
+
+
+@media all and (min-width:576px){
+    .course_con .info_con {padding-left: 49px; padding-right: 49px;}
+    .icon_con .icon_item {margin: 20px 10px 0; padding: 0; width: auto;}
+}
+
+
+@media all and (min-width:768px){
+    .visual_con .main_title {text-align: left;}
+    .visual_con .main_desc {text-align: left;}
+
+    section.course_con {margin-top: 38px;}
+    section h3 {text-align: left;}
+
+    .icon_con .icon_item {margin-left: 22px; margin-right: 22px;}
+}
+
+
+@media all and (min-width:992px){
+    section.visual_con {margin-top: 70px;}
+    .visual_con .main_title {float: left; margin-top: 60px; font-size: 4.5rem; line-height: 4.5rem;}
+    .visual_con .more_btn {margin-top: 86px;}
+    .shortcut_con {margin-top: 39px;}
+    .shortcut_con .name {background: url('../img/pipe0.png') no-repeat left center;}
+    .shortcut_con > div:first-child .name {background: none;}
+
+    .support_con ul.post_con > li {width: 50%;}
+    .support_con ul.post_con > li.first_post {padding-right: 30px;}
+
+    section.icon_con {margin: 50px 0 78px;}
+}
+
+
+@media all and (min-width:1200px){
+    .shortcut_con {margin-left: -35px;}
+
+    .course_con .slide_arrow {display: block;}
+}
